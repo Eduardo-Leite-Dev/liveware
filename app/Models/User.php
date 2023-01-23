@@ -19,9 +19,9 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'user',
         'email',
         'password',
-        'user',
     ];
 
     /**
@@ -45,6 +45,6 @@ class User extends Authenticatable
 
     public function Tweets(){
 
-        return $this->hasMany(Tweets::class);
+        return $this->hasMany(Tweet::class);
     }
 }

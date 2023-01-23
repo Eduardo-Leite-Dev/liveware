@@ -1,5 +1,5 @@
 <div>
-    
+
     <h1>Mostra postagens</h1>
 
     <p>{{ $message}}</p>
@@ -8,6 +8,6 @@
 
     <hr>
     @foreach ($tweets as $tweet)
-        {{ $tweets->user->name }} - {{ $tweets->content }}
+        {{ $tweet->user->name }} - {{ $tweet->content }} <br>
     @endforeach
 </div>
